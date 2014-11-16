@@ -1,5 +1,6 @@
 # Build a simple docker image using rinse
 docker-centos6: depends	scratch
+	sudo cp post-install.sh /usr/lib/rinse/centos-6/post-install.sh
 	sudo /usr/share/docker.io/contrib/mkimage.sh -t centos:centos6 rinse --distribution centos-6
 
 # docker seems to require a scratch image, so not pull from internet, I import it in the local repository
