@@ -19,5 +19,5 @@ depends: /usr/sbin/rinse /usr/bin/strings /usr/bin/docker
 /usr/sbin/rinse:
 	sudo apt-get install rinse
 
-run6:
+run:
 	docker run --rm=true -t -i centos:centos6 /bin/bash
